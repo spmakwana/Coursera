@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<script>
+		// Online Javascript Editor for free
+		// Write, Edit and Run your Javascript code using JS Online Compiler
+
+		var names = new Array();
+		names[0] = "Jay";
+		names[1] = "Kartik";
+		names[2] = "Jagdish";
+		names[3] = "Sumit";
+		names[4] = "Micheal";
+		names[5] = "Hamilton";
+		names[6] = "Seb";
+
+		names.forEach(myFunction);
+
+		function myFunction(value, index, array) {
+			if (value.substring(0, 1) == "j" || value.substring(0, 1) == "J") {
+				console.log("Goodbye " + value);
+				document.write("<BR>Goodbye " + value);
+			} else {
+				console.log("Hello " + value);
+				document.write("<BR>Hello " + value);
+			}
+		}
+	</script>
+</body>
+
+</html>
